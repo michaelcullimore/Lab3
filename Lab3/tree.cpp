@@ -3,6 +3,7 @@
 //Lab3 - Tree
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main () {
@@ -11,7 +12,13 @@ int main () {
 
 	double treeHeight = 0.0;
 
-	cout << "How tall should the tree be?: "; cin >> treeHeight; cout << endl;
+	cout << "How tall should the tree be?: "; 
+	cin >> treeHeight; cout << endl;
+
+	if (treeHeight < 3 || treeHeight > 15) {
+		cout << "Error. Tree dimensions are out of bounds.\n";
+		exit (0);
+	}
 
 	system ("pause");
 	return 0;
