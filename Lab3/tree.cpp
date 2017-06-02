@@ -28,26 +28,16 @@ int main () {
 			cout << " ";
 		}
 
-		//for (int fSlash = 0; fSlash <= (2 * level); fSlash++) {
-			cout << "/";
-		//}
+		//prints the forward slashes
+		cout << "/";
+
+		//spaces inside the "triangle"
 		for (int spaces2 = 0; spaces2 < (2 * level); spaces2++) {
 			cout << " ";
 		}
 
-
-		//for (int bSlash = 0; bSlash <= (treeHeight - level); bSlash++) {
-			cout << "\\";
-		//}
-
-		/*for (int spaces2 = 0; spaces2 < (treeHeight - level - 1); spaces2++) {
-			cout << " ";
-		}*/
-
-		//should be code for spaces inside the triangle. How do I get them in there?
-		/*for (int baseline = 0; baseline < (level * 2); baseline++) {
-			cout << "-";
-		}*/
+		//prints the back slashes
+		cout << "\\";
 
 		cout << endl;
 	}
@@ -56,9 +46,12 @@ int main () {
 	for (int baseline = 0; baseline < (treeHeight * 2); baseline++) {
 		cout << "-";
 	}
+
 	cout << endl;
 
-	
+	for (int underSpace = 0; underSpace < (treeHeight - 1); underSpace++) {
+		cout << "x";
+	}
 
 	system ("pause");
 	return 0;
